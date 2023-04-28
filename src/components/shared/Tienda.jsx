@@ -1,7 +1,4 @@
 import { useState } from 'react';
-
-import './index.css';
-
 import {
   RiMenu3Fill,
   RiShoppingCartFill,
@@ -9,21 +6,21 @@ import {
 } from "react-icons/ri";
 // Components
 
-import Sidebar from "./components/shared/Sidebar";
-import Car from "./components/shared/Car";
-
-
-import { Route, Routes } from 'react-router-dom';
-import Tienda from './components/shared/Tienda';
-import Buscar from './components/shared/Buscar';
 
 
 
+import Sidebar from "./Sidebar";
+import Car from "./Car";
+import Header from "./Header";
+import Card from "./Card";
 
 
 
-function App() {
- 
+
+
+function Tienda() {
+
+  
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
   
@@ -38,15 +35,18 @@ function App() {
   };
 
  
+ 
   const [allProducts, setAllProducts] = useState([]);
 	const [total, setTotal] = useState(0);
 	const [countProducts, setCountProducts] = useState(0);
 
   return (
-   
+  
+    
     <div className="bg-[#262837] w-full min-h-screen">
       
-           <Sidebar showMenu={showMenu} />
+          
+      <Sidebar showMenu={showMenu} />
       <Car showOrder={showOrder} setShowOrder={setShowOrder}
      allProducts={allProducts}
      setAllProducts={setAllProducts}
@@ -60,7 +60,8 @@ function App() {
         
        
         <button onClick={toggleOrders} className=" text-orange-500 grid">
-        <span className=" bg- [#f07c04] rounded-tl-xl py-0 px-6 text-white rigth-0">{countProducts}</span> <RiShoppingCartFill className='' />  
+        <span className=" bg- [#f07c04] rounded-tl-sl py-0 px-4 text-white -translate-y-0.01 translate-x-2">{countProducts}</span> 
+        <RiShoppingCartFill className='py-0 -translate-y-2 translate-x-1' />  
         </button>
         <button onClick={toggleMenu} className="text-white p-2">
           {showMenu ? <RiCloseLine /> : <RiMenu3Fill />  
@@ -70,23 +71,34 @@ function App() {
       </nav>
       <main className="lg:pl-32 lg:pr-96 pb-20">
         <div className="md:p-8 p-4">
+          {/* Header */}
+          <Header />
+          {/* Title content */}
           
-        <Routes>
-  <Route path='/' element={<Tienda/>}></Route>
-  <Route path='/Buscar' element={<Buscar/>}></Route>
-  
-  
-        </Routes>
-        
-        
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
+          <div className="flex items-center justify-center mb-16">
+            <h2 className="text-xl text-gray-300">Selecciona tus productos</h2>
+           
+          </div >
+          </div>
+          <div >
+            {/* Card */}
+          <Card 
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          countProducts={countProducts}
+          setCountProducts={setCountProducts} />
+          </div>
         </div>
       </main>
          
       </div>
-    
+     
    
   );
   
   }
 
-export default App;
+export default Tienda;
