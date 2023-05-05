@@ -13,7 +13,7 @@ import Sidebar from "./Sidebar";
 import Car from "./Car";
 import Header from "./Header";
 
-import Buscador from './Buscador';
+
 
 
 
@@ -82,13 +82,12 @@ function Buscar() {
          
           <div className="flex items-center justify-center mb-16">
           
-           <Buscador/>
           </div >
        
           </div>
           <div >
       
-       
+     
           </div>
         </div>
       </main>

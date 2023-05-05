@@ -15,7 +15,7 @@ import Car from "./components/shared/Car";
 
 import { Route, Routes } from 'react-router-dom';
 import Tienda from './components/shared/Tienda';
-import Buscar from './components/shared/Buscar';
+
 
 
 
@@ -73,7 +73,7 @@ function App() {
           
         <Routes>
   <Route path='/' element={<Tienda/>}></Route>
-  <Route path='/Buscar' element={<Buscar/>}></Route>
+  
   
   
         </Routes>

@@ -9,7 +9,8 @@
       precio:9999,
       stock_misiones:90,
       stock_corrientes:20,
-      quantity: 1
+      quantity: 1,
+      count: 0
   },
   {
     id: 2,
@@ -20,7 +21,8 @@
     precio:9999,
     stock_misiones:50,
     stock_corrientes:20,
-    quantity: 1
+    quantity: 1,
+    count: 0
   },
   {
     id: 3,
@@ -31,7 +33,8 @@
     precio:9999,
     stock_misiones:30,
     stock_corrientes:20,
-    quantity: 1
+    quantity: 1,
+    count: 0
   },
   {
     id: 4,
@@ -42,7 +45,8 @@
     precio:9999,
     stock_misiones:20,
     stock_corrientes:20,
-    quantity: 1
+    quantity: 1,
+    count: 0
   },
   {
    id: 5,
@@ -53,7 +57,8 @@
   precio:9999,
   stock_misiones:20,
   stock_corrientes:20,
-  quantity: 1
+  quantity: 1,
+  count: 0
   },
   {
     id: 6,
@@ -64,7 +69,8 @@
     precio:9999,
     stock_misiones:90,
     stock_corrientes:20,
-    quantity: 1
+    quantity: 1,
+    count: 0
 },
 {
   id: 7,
@@ -75,7 +81,8 @@
   precio:9999,
   stock_misiones:50,
   stock_corrientes:20,
-  quantity: 1
+  quantity: 1,
+  count: 0
 },
 {
   id: 8,
@@ -86,7 +93,8 @@
   precio:9999,
   stock_misiones:30,
   stock_corrientes:20,
-  quantity: 1
+  quantity: 1,
+  count: 0
 },
 {
   id: 9,
@@ -97,7 +105,8 @@
   precio:9999,
   stock_misiones:20,
   stock_corrientes:20,
-  quantity: 1
+  quantity: 1,
+  count: 0
 },
 
 
@@ -110,7 +119,8 @@
   precio:9999,
   stock_misiones:90,
   stock_corrientes:20,
-  quantity: 1
+  quantity: 1,
+  count: 0
 },
 {
 id: 11,
@@ -121,7 +131,8 @@ aplicación:"Ecosport Fiesta",
 precio:9999,
 stock_misiones:50,
 stock_corrientes:20,
-quantity: 1
+quantity: 1,
+count: 0
 },
 {
 id: 12,
@@ -132,7 +143,8 @@ aplicación:"FORD  DER.  KA MODELO 2016/AD 4 PTAS",
 precio:9999,
 stock_misiones:30,
 stock_corrientes:20,
-quantity: 1
+quantity: 1,
+count: 0
 },
 
   ];
